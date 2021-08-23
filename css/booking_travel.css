@@ -1,0 +1,87 @@
+.banner{
+    background: url(../img/banner13.jpg) no-repeat center center/100%;
+}
+
+/*预约旅行样式开始*/
+.booking_travel2{
+    width: 1000px;
+    margin: 0 auto;
+}
+.booking_travel2 p{
+    text-align: center;
+    font-size: 22px;
+}
+.booking_travel2 h4{
+    font-weight: normal;
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(124, 124, 124);
+}
+/*表单样式*/
+.booking_travel2 form{
+    width: 1000px;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 80px auto;
+    position: relative;
+}
+.booking_travel2 div{
+    display: inline-block;
+    font-size: 14px;
+    color: red;
+    margin-left: 10px;
+}
+.booking_travel2 input:focus{
+    border: none;
+    outline: 1px solid #047ca7 ;
+}
+.booking_travel2 input[type=text],input[type=date],input[type=email]{
+    width: 467px;
+    height: 55px;
+    border: 1px solid #ccc;
+    margin: 15px 55px 30px 0px;
+}
+.booking_travel2 input[type=checkbox]{
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+    vertical-align: bottom;
+    border: 1px solid #ccc;
+}
+.booking_travel2 input[type=submit]{
+    width: 380px;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 310px;
+    color: white;
+    border: 1px solid #ccc;
+    background-color: #047ca7;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.booking_travel2 input[type=submit]:hover{
+    background-color: #a70427;
+}
+.booking_travel2 u{
+    display: inline-block;
+    margin-left: 451px;
+}
+.booking_travel2 .INPUT{
+    margin: 15px 0px 20px 0px !important;
+}
+.booking_travel2 .INPUT2{
+    margin-left: 264px !important;
+}
+.booking_travel2 span{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px !important;
+}
+.booking_travel2 #SPAN33{
+    font-size: 18px !important;
+    font-weight: 300;
+    position: absolute;
+    top: 116px;
+    left: 530px;
+}
+/*预约旅行样式结束*/

@@ -1,0 +1,117 @@
+.route_summary2 a{
+    color: #000;
+}
+.hover a{
+    color: white;
+}
+.route_summary2 li:hover a{
+    color: white;
+}
+.route_summary2{
+    height: 1400px;
+}
+.route_summary2 .left{
+    width: 920px;
+    height: 380px;
+    float: left;
+}
+.route_summary2 .left img{
+    width: 500px;
+    float: left;
+}
+.route_summary2 .left div{
+    width: 370px;
+    float: right;
+    line-height: 30px;
+    position: relative;
+}
+.route_summary2 .left div b{
+    color: red;
+    font-size: 32px;
+}
+.route_summary2 .left div a{
+    display: block;
+    margin-top: 25px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    background-color: #047ca7;
+    transition: all 0.2s;
+}
+.route_summary2 .left div a:hover{
+    display: block;
+    background-color: #a70427;
+}
+.route_summary2 .right{
+    width: 218px;
+    height: 280px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 26px;
+    float: right;
+    padding: 30px 20px;
+    border: 1px solid #ccc;
+}
+.route_summary2 .right h2{
+    color: #047ca7;
+}
+.route_summary2 .right img{
+    width: 180px;
+}
+.route_summary2 .bottom{
+    width: 860px;
+    height: 800px;
+    padding: 20px;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+.route_summary2 .bottom p{
+    margin: 20px 0px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.route_summary2 .bottom p:nth-child(3),.bottom p:nth-child(5){
+    margin: 20px 0px;
+    line-height: 25px;
+    text-align: center;
+    border-bottom: none;
+}
+.route_summary2 .bottom span{
+    display: block;
+    width: 200px;
+    position: relative;
+    top: -10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.route_summary2 .bottom img{
+    width: 860px;
+    height: 390px;
+}
+.route_summary2 .bottom_right{
+    width: 260px;
+    height: 840px;
+    float: right;
+}
+.route_summary2 .bottom_right img{
+    width: 260px;
+}
+.route_summary2 .bottom_right u{
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+}
+.route_summary2 .bottom_right table{
+    line-height: 30px;
+}
+.route_summary2 .bottom_right table th{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.route_summary2 .bottom_right table tr{
+    line-height: 34px;
+}

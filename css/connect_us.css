@@ -1,0 +1,89 @@
+.banner{
+    background: url(../img/banner12.jpg) no-repeat center center/100%;
+}
+
+/*联系我们样式开始*/
+.connect_us2{
+    width: 1200px;
+    margin: 0 auto;
+}
+.connect_us2 p{
+    text-align: center;
+    font-size: 22px;
+}
+/*左侧地图样式*/
+.connect_us2 #map-box{
+    width: 580px;
+    height: 400px;
+    margin: 80px 0px;
+    float: left;
+    background: url(../img/地图.JPG) no-repeat center center/100%;
+}
+.connect_us2 #map iframe{
+    width: 600px;
+    height: 420px;
+}
+/*右侧盒子样式*/
+.connect_us2 #right{
+    width: 560px;
+    height: 400px;
+    line-height: 60px;
+    float: right;
+    position: relative;
+    color: rgb(104, 104, 104);
+    margin: 80px 0px;
+}
+.connect_us2 #right img{
+    position: absolute;
+    bottom: 50px;
+    width: 150px;
+}
+.connect_us2 #right u{
+    display: inline-block;
+    position: absolute;
+    left: 35px;
+    bottom: 0px;
+    width: 150px;
+}
+.connect_us2 #right p{
+    width: 310px;
+    height: 180px;
+    text-align: left;
+    position: absolute;
+    left: 185px;
+    bottom: 0px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+/*图片滚动样式*/
+#caseshow{
+	width: 1200px;
+    height: 200px;
+    margin: 80px auto;
+	margin-top: 10px;
+	padding-bottom: 10px;
+    overflow: hidden;
+}
+#caseshow img{
+	width: 220px;
+    height: 180px;
+	margin-right: 20px;
+	float: left;
+}
+#caseshow ul{
+	width: 1200px;
+}
+#caseshow ul li{
+	animation: dh 40s linear infinite;/*滚动动画*/
+	width: 300%;
+}
+#caseshow ul:hover li{
+	animation-play-state: paused;
+}
+/*滚动动画*/
+@keyframes dh{
+	from{transform: translateX(0px);}
+	to{transform: translateX(-1440px);}
+}
+/*联系我们样式结束*/

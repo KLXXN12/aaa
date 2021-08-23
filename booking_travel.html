@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预约旅行</title>
+    <link rel="stylesheet" href="css/header_and_footer.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/about_us.css" />
+    <link rel="stylesheet" href="css/booking_travel.css" />
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <img src="img/logo.png" />
+        <p>青扬旅游</p>
+        <!--导航栏-->
+        <ul>
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about_us.html">关于我们</a></li>
+            <li><a href="route_summary.html">路线总汇</a></li>
+            <li><a href="news_and_trends.html">新闻动态</a></li>
+            <li><a href="booking_travel.html" class="present">预约旅行</a></li>
+            <li><a href="connect_us.html">联系我们</a></li>
+        </ul>
+    </header>
+    <div class="banner">
+        <!--banner-->
+        <p>
+            预约旅行
+        </p>
+        <i>————</i><br />
+        <span>Booking Travel</span>
+    </div>
+    <main>
+        <div class="booking_travel2">
+            <!--预约旅行-->
+            <p>预约旅行</p>
+            <h4>定制您的专属旅行路线，我们会为您全程服务</h4>
+            <h4>
+                请仔细填写好下方预约表格，我们的客服人员会在24小时内与您联系，<br />
+                谢谢您的支持与关注！​​
+            </h4>
+            <!--表单-->
+            <form action="#">
+                您的姓名<u></u>
+                您的电话<div id="mobile_prompt"></div><br />
+                <input type="text" required="required">
+                <input type="text" id="mobile"  class="INPUT"onblur="checkMobile()" required="required"><br />
+                您的邮箱<div id="email_prompt"></div><span id="SPAN33">出行日期</span><br />
+                <input type="email" id="email"  onblur="checkEmail()" required="required">
+                <input type="date" class="INPUT"><br />
+                旅行地点<u></u>
+                备注<br />
+                <input type="text">
+                <input type="text" class="INPUT"><br />
+                房间类型<u></u>
+                房间数量<br />
+                <span>
+                    <input type="checkbox">海景房
+                    <input type="checkbox">豪华间
+                    <input type="checkbox">标间
+                    <input type="checkbox">钟点房
+                    <input type="checkbox" class="INPUT2">一间
+                    <input type="checkbox">二间
+                    <input type="checkbox">三间
+                </span>
+                <br />
+                <input type="submit">
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>青扬旅游<br /><span>YOUR BEST CHOICE</span></p>
+            <!--底部导航栏-->
+            <ul>
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="about_us.html">关于我们</a></li>
+                <li><a href="route_summary.html">路线总汇</a></li>
+                <li><a href="news_and_trends.html">新闻动态</a></li>
+                <li><a href="booking_travel.html" class="present">预约旅行</a></li>
+                <li><a href="connect_us.html">联系我们</a></li>
+            </ul>
+            <br /><br />
+            <b>
+                Copyright © 2011-2021 青扬旅游社有限公司 蜀ICP备11000号<br />
+                地址：四川省成都市郫都区合作街道高新西区大道2000号<br />
+                电话：020-12345678 020-12345678<br />
+                邮箱：2860266692@qq.com
+            </b>
+            <img src="img/二维码.jpg" /><br />
+            <span class="span1">微信扫一扫</span>
+            <p class="foot_p">
+                客服热线：<br />
+                888-888-8888
+            </p>
+            <p class="tubiao">
+                <img src="img/QQ图标.png" title="QQ" />
+                <img src="img/微信图标.png" title="微信" />
+                <img src="img/人人网图标.png" title="人人网" />
+                <img src="img/新浪微博图标.png" title="新浪微博" />
+                <img src="img/腾讯微博图标.png" title="腾讯微博" />
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript" src="js/booking_travel.js"></script>
+
+</html>

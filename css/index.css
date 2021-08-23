@@ -1,0 +1,752 @@
+/*banner样式开始*/
+.banner{
+    width: 100%;
+    height: 620px;
+    position: absolute;
+    top: 100px;
+    overflow: hidden;
+}
+#slide{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#slide section{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+}
+/*banner图片切换*/
+#slide section .tupian{
+    width: 100%;
+    height: 100%;
+}
+#slide section .tupian .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*banner图片切换动画*/
+.yun {
+    animation: bian 4s linear infinite;
+}
+@keyframes bian {
+    0%,
+    100% {
+        opacity: 0.2;
+        backdrop-filter: blur(10px);
+    }
+    30%,
+    80% {
+        opacity: 1;
+        backdrop-filter: blur(0px);
+    }
+}
+/*banner底部小圆点切换样式*/
+#slide .select{
+    position: absolute;
+    bottom: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slide .select .dian{
+    margin: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+#slide .select .dian:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.check {
+    background-color: rgb(255, 255, 255);
+}
+/*banner图片切换左右点击切换样式*/
+#slide section .bt{
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    line-height: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.banner:hover #slide section .bt{
+    opacity: 1;
+}
+#slide section .left{
+    left: 20px;
+}
+#slide section .right{
+    right: 20px;
+}
+#slide section .anniu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    transition: all 0.3s;
+}
+/*banner文字样式*/
+.banner_text{
+    line-height: 20px;
+    width: 70%;
+    height: 280px;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 15%;
+}
+.banner_text p{
+    animation: banner_p 1.3s;
+}
+/*banner文字从上到下动画*/
+@keyframes banner_p {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*banner线条旋转动画*/
+.banner_text i{
+    display: inline-block;
+    font-weight: normal;
+    animation: banner_i 1.3s;
+}
+@keyframes banner_i {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.banner_text span{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    animation: banner_span 1.3s;
+}
+/*banner文字从下到上动画*/
+@keyframes banner_span {
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*banner样式结束*/
+
+/*main样式开始*/
+main{
+    width: 100%;
+    position: relative;
+    margin-top: 720px;
+}
+/*关于我们模块样式开始*/
+.about_us1{
+    width: 1200px;
+    height: 900px;
+    margin: 0 auto; 
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+}
+/*第一张图片样式*/
+.about_us1 p{ 
+    cursor: pointer;
+}
+.about_us1 .p1{
+    width: 600px;
+    height: 560px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background: url(../img/bg5.jpg) no-repeat top left/100% 100%;
+}
+.about_us1 .p1 span{
+    width: 540px;
+    height: 380px;
+    padding: 30px;
+    font-size: 13px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.35);
+    display: inline-block;
+    padding-top: 150px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.about_us1 .p1:hover span{
+    opacity: 1;
+}
+.about_us1 .p1 b{
+    display: block;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+/*从上到下出场动画*/
+@keyframes an1 {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*第二张图片样式*/
+.about_us1 .p2{
+    width: 315px;
+    height: 245px;
+    position: absolute;
+    bottom: 75px;
+    right: -105px;
+    transition: all 0.3s;
+    background: url(../img/bg2.jpg) no-repeat top center/145%;
+}
+.about_us1 .p2:hover{
+    background: url(../img/bg2.jpg) no-repeat center center/190%;
+}
+/*从上到下出场动画*/
+@keyframes an2 {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*段落文字样式*/
+.about_us1 .p3{
+    width: 550px;
+    height: 280px;
+    line-height: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 25px 0px 40px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: hidden;
+}
+.about_us1 .p3 b{
+    font-weight:500;
+    font-size: 18px;
+}
+.about_us1 .p3 i{
+    font-weight:500;
+}
+.about_us1 .p3 span{
+    color: rgb(59, 59, 59);
+    font-size: 13px;
+    font-weight: normal;
+}
+.about_us1 .p3 a{
+    width: 105px;
+    height: 35px;
+    line-height: 35px;
+    color: #047ca7;
+    border: 1px solid #047ca7;
+    text-align: center;
+    display: block;
+    margin-top: 25px;
+    font-size: 13px;
+    font-weight: normal;
+    transition: all 0.3s;
+}
+.about_us1 .p3 a:hover{
+    color: white;
+    background-color: #047ca7;
+}
+/*从左到右出场动画*/
+@keyframes an3 {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+/*第四张图片样式*/
+.about_us1 .p4{
+    width: 285px;
+    height: 245px;
+    position: absolute;
+    top: 320px;
+    right: 0px;
+    transition: all 0.3s;
+    background: url(../img/bg4.jpg)  center center/165%;
+}
+.about_us1 .p4:hover{
+    background: url(../img/bg4.jpg)  center center/190%;
+}
+/*第五张图片样式*/
+.about_us1 .p5{
+    width: 285px;
+    height: 505px;
+    position: absolute;
+    bottom: 75px;
+    right: 300px;
+    transition: all 0.3s;
+    background: url(../img/bg3.jpg)  top center/100%;
+}
+.about_us1 .p5:hover{
+    background: url(../img/bg3.jpg)  bottom center/120%;
+}
+/*第六张图片样式*/
+.about_us1 .p6{
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    left: 0px;
+    bottom: 75px;
+    transition: all 0.3s;
+    background: url(../img/banner4.jpg)  bottom center/100%;
+}
+.about_us1 .p6:hover{
+    background: url(../img/banner4.jpg)  center center/115%;
+}
+/*从右到左出场动画*/
+@keyframes an4 {
+    0%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+/*关于我们模块样式结束*/
+
+/*我们的优势模块样式开始*/
+.advantage{
+    width: 100%;
+    padding: 50px 0;
+    padding-bottom: 30px;
+    height: auto;
+    color: white;
+    overflow: hidden;
+}
+/*背景图样式*/
+.advantage.image-container{
+    width: 100%;
+    margin-top: 100px;
+    height: 400px;
+    background-image: url(../img/bg6.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.advantage p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+/*标题从上到下动画*/
+@keyframes text1 {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.advantage span{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+.advantage i{
+    display: inline-block;
+}
+/*线条旋转动画*/
+@keyframes text2 {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/*列表样式*/
+.advantage ul{
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+}
+.advantage img{
+    width: 100px;
+    padding-top: 35px;
+    line-height: 166px;
+}
+.advantage .img1{
+    transition: all 0.4s;
+    display: none;
+}
+.advantage ul li{
+    width: 166px;
+    height: 166px;
+    position: relative;
+    line-height: 166px;
+    text-align: center;
+    border-radius: 50%;
+    color: #047ca7;
+    border: 1px solid white;
+    margin: 36px;
+    float: left;
+    cursor: pointer;
+    box-shadow:0 0 0 1px rgb(255, 255, 255) inset;
+    transition:box-shadow 0.4s ease 0s;
+}
+.advantage ul li:hover{
+    box-shadow:0 0 0 93px rgb(255, 255, 255) inset;
+}
+.advantage ul li:hover .img1{
+    display: inline-block;
+}
+.advantage ul li:hover .img2{
+    display: none;
+}
+@keyframes an5 {
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/*表格样式*/
+.advantage table{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+/*我们的优势模块样式结束*/
+
+/*路线总汇模块样式开始*/
+.route_summary{
+    width: 1240px;
+    height: 677px;
+    margin: 80px auto;
+    overflow: hidden;
+}
+.route_summary p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.route_summary span{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+/*表格样式*/
+.route_summary table{
+    width: 1240px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 20px 20px;
+}
+.route_summary table img{
+    width: 386px;
+    height: 280px;
+}
+.route_summary table tr{ 
+    height: 276px;
+    overflow: hidden;
+}
+/*从右到左出场动画*/
+@keyframes an6 {
+    0%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+/*从左到右出场动画*/
+@keyframes an7 {
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.route_summary table tr td{
+    height: 276px;
+    overflow: hidden;   
+}
+.route_summary .td1,.td2,.td3,.td4,.td5{
+    position: relative;
+}
+.route_summary .td1 img:nth-child(1),.td2 img:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+.route_summary .td1 img:nth-child(2),.td2 img:nth-child(2){
+    position: absolute;
+    top: -280px;
+    left: 0;
+    transition: all 0.4s;
+}
+.route_summary .td1:hover .imgA1,.td2:hover .imgA1{
+    position: absolute;
+    top: 280px;
+    left: 0;
+}
+.route_summary .td1:hover .imgA2,.td2:hover .imgA2{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.route_summary .td2 img{
+    width: 794px;
+}
+.route_summary .td2 a{
+    width: 794px;
+}
+.route_summary table a{
+    width: 386px;
+    height: 180px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    padding-top: 100px;
+    transition: all 0.3s;
+}
+.route_summary .td1:hover a,.td2:hover a{
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.route_summary table a span{
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+/*路线总汇模块样式结束*/
+
+/*预约旅行模块样式开始*/
+.booking_travel{
+    width: 100%;
+    padding: 50px 0;
+    padding-bottom: 30px;
+    height: auto;
+    color: white;
+    overflow: hidden;
+}
+/*背景图样式*/
+.booking_travel.image-container2{
+    width: 100%;
+    margin-top: 100px;
+    height: 240px;
+    background-image: url(../img/bg11.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.booking_travel p{
+    width: 1200px;
+    line-height: 20px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+.booking_travel span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.booking_travel a{
+    width: 135px;
+    height: 45px;
+    line-height: 45px;
+    color: #047ca7;
+    border: 1px solid #ffffff;
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    margin-left: 531.5px;
+    font-size: 16px;
+    background-color: white;
+    transition: all 0.3s;
+}
+.booking_travel a:hover{
+    color: white;
+    border: 1px solid #047ca7;
+    background-color: #047ca7;
+}
+/*预约旅行模块样式结束*/
+
+/*新闻动态模块样式开始*/
+.news_and_trendsy{
+    width: 1200px;
+    height: 755px;
+    margin: 80px auto;
+    position: relative;
+    overflow: hidden;
+}
+.news_and_trendsy p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.news_and_trendsy span{
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+/*左侧盒子样式*/
+.news_and_trendsy .left1{
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.news_and_trendsy .left1 img{
+    width: 560px;
+    height: 350px;
+}
+.news_and_trendsy .left1 a{
+    width: 350px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    line-height: 60px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+.news_and_trendsy .left1 a:hover{
+    text-decoration: underline;
+}
+/*右侧盒子样式*/
+.news_and_trendsy .right1{
+    width: 800px;
+    height: 350px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    overflow: hidden;
+}
+/*手风琴效果*/
+.news_and_trendsy .right1 ul{
+    width: 800px;
+    height: 350px;
+    display: flex;
+}
+.news_and_trendsy .right1 img{
+    width: 520px;
+    height: 350px;
+}
+.news_and_trendsy .right1 li{
+    transition: 0.7s;
+    overflow: hidden;
+}
+.news_and_trendsy .right1 li:hover{
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+/*底部盒子样式*/
+.news_and_trendsy .content{
+    width: 1200px;
+    height: 80px;
+}
+/*底部盒子导航栏样式*/
+.news_and_trendsy .content p{
+    width: 350px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: #047ca7;
+    float: left;
+    transition: all 0.3s;
+}
+.news_and_trendsy .content p:hover{
+    background-color: #a70427;
+}
+.news_and_trendsy .content p:nth-child(1),p:nth-child(2){
+    margin-right: 75px;
+}
+.news_and_trendsy .content a{
+    color: white;
+}
+.news_and_trendsy .content .ul1{
+    margin-right: 75px;
+}
+/*底部盒子新闻样式*/
+.news_and_trendsy .content ul{
+    width: 350px;
+    position: relative;
+    line-height: 32px;
+    float: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.news_and_trendsy .content ul li{
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.2s;
+}
+.news_and_trendsy .content ul b{
+    display: inline-block;
+    margin-right: 3px;
+    font-size: 10px;
+}
+.news_and_trendsy .content ul li a{
+    color: #000000 !important;
+}
+.news_and_trendsy .content ul li:hover a{
+    color: #a70427 !important;
+}
+.news_and_trendsy .content ul span{
+    font-size: 10px;
+    color: #ccc;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+/*新闻动态模块样式结束*/
+
+/*main样式结束*/

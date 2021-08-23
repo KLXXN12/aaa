@@ -1,0 +1,120 @@
+/*banner样式开始*/
+.banner{
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    top: 100px;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    background: url(../img/banner11.jpg) no-repeat center center/100%;
+} 
+/*banner文字样式*/
+.banner p{
+    animation: an1 1s;
+    margin-top: 160px;
+}
+.banner i{
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 300;
+    animation: banner_i 1s;
+}
+.banner span{
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    animation: an5 1s;
+}
+/*banner样式结束*/
+
+/*main样式开始*/
+main{
+    width: 100%;
+    position: relative;
+    margin-top: 660px;
+    overflow: hidden;
+}
+/*关于我们样式*/
+.about_us1{
+    width: 1200px;
+    height: 450px;
+    position: relative;
+    top: 0;
+    margin: 0px auto;
+}
+.about_us1 p:nth-child(1){
+    height: 80px;
+    text-align: center;
+    font-size: 22px;
+}
+/*左侧图片样式*/
+.about_us1 .left2{
+    width: 500px;
+    float: left;
+    overflow: hidden;
+}
+.about_us1 .left2 video{
+    width: 500px;
+    height: 370px;
+}
+/*右侧文字样式*/
+.about_us1 .right2{
+    width: 670px;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 35px;
+    float: right;
+}
+/*我们的优势样式——有继承首页的样式*/
+.advantage ul li:hover{
+    animation: li1 0.3s !important;
+}
+@keyframes li1 {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.advantage.image-container{
+    background-image: url(../img/banner6.jpg);
+}
+/*联系我们样式*/
+.content2{
+    width: 1200px;
+    height: 260px;
+    text-align: center;
+    margin: 80px auto;
+    margin-bottom: 20px;
+}
+.content2 p{
+    font-size: 28px;
+    font-weight: bold;
+    color: #047ca7;
+}
+.content2 span{
+    font-size: 20px;
+    color: #606363;
+}
+.content2 a{
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    margin: 30px auto;
+    border: 1px solid #047ca7;
+    display: block;
+    color: #047ca7;
+    transition: all 0.3s;
+}
+.content2 a:hover{
+    color: white;
+    background-color: #047ca7;
+}
+/*main样式结束*/
+
+footer{
+    clear: both;
+}
